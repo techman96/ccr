@@ -90,10 +90,10 @@ h1 {
 }
 
 .image-comparison {
-  max-width: 900px;
+  max-width: 1100px;
+  max-height: 98%;
   margin: 20px auto;
   border-radius: 20px;
-  border: red 1px solid;
   overflow: hidden;
 }
 
@@ -111,8 +111,8 @@ h1 {
 
 .image-comparison .images-container .before-image {
   position: absolute;
-  top: 0;
-  width: 0%;
+  top: 00px;
+  width: 50%;
 }
 
 .image-comparison .slider {

@@ -57,6 +57,32 @@ slider.addEventListener("input", (e) => {
   sliderIcon.style.left = sliderValue;
 });
 
+const slider_1 = document.querySelectorAll(".image-comparison .slider")[1];
+const beforeImage_1 = document.querySelectorAll(".image-comparison .before-image")[1];
+const sliderLine_1 = document.querySelectorAll(".image-comparison .slider-line")[1];
+const sliderIcon_1 = document.querySelectorAll(".image-comparison .slider-icon")[1];
+
+slider_1.addEventListener("input", (e) => {
+  let sliderValue_1 = e.target.value + "%";
+
+  beforeImage_1.style.width = sliderValue_1;
+  sliderLine_1.style.left = sliderValue_1;
+  sliderIcon_1.style.left = sliderValue_1;
+});
+
+const slider_2 = document.querySelectorAll(".image-comparison .slider")[2];
+const beforeImage_2 = document.querySelectorAll(".image-comparison .before-image")[2];
+const sliderLine_2 = document.querySelectorAll(".image-comparison .slider-line")[2];
+const sliderIcon_2 = document.querySelectorAll(".image-comparison .slider-icon")[2];
+
+slider_2.addEventListener("input", (e) => {
+  let sliderValue_2 = e.target.value + "%";
+
+  beforeImage_2.style.width = sliderValue_2;
+  sliderLine_2.style.left = sliderValue_2;
+  sliderIcon_2.style.left = sliderValue_2;
+});
+
 // function background(){
 
 // }
