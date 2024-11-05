@@ -44,44 +44,47 @@ videos.forEach(el => {
 //   }
 // }
 
-const slider = document.querySelector(".image-comparison .slider");
-const beforeImage = document.querySelector(".image-comparison .before-image");
-const sliderLine = document.querySelector(".image-comparison .slider-line");
-const sliderIcon = document.querySelector(".image-comparison .slider-icon");
+const sliders = document.querySelectorAll(".image-comparison .slider");
+const beforeImages = document.querySelectorAll(".image-comparison .before-image");
+const sliderLines = document.querySelectorAll(".image-comparison .slider-line");
+const sliderIcons = document.querySelectorAll(".image-comparison .slider-icon");
 
-slider.addEventListener("input", (e) => {
-  let sliderValue = e.target.value + "%";
+sliders.forEach((slider, index) => {
+  slider.addEventListener("input", (e) => {
+    let sliderValue = e.target.value + "%";
 
-  beforeImage.style.width = sliderValue;
-  sliderLine.style.left = sliderValue;
-  sliderIcon.style.left = sliderValue;
+    beforeImages[index].style.width = sliderValue;
+    sliderLines[index].style.left = sliderValue;
+    sliderIcons[index].style.left = sliderValue;
+  });
 });
 
-const slider_1 = document.querySelectorAll(".image-comparison .slider")[1];
-const beforeImage_1 = document.querySelectorAll(".image-comparison .before-image")[1];
-const sliderLine_1 = document.querySelectorAll(".image-comparison .slider-line")[1];
-const sliderIcon_1 = document.querySelectorAll(".image-comparison .slider-icon")[1];
 
-slider_1.addEventListener("input", (e) => {
-  let sliderValue_1 = e.target.value + "%";
+// const slider_1 = document.querySelectorAll(".image-comparison .slider")[1];
+// const beforeImage_1 = document.querySelectorAll(".image-comparison .before-image")[1];
+// const sliderLine_1 = document.querySelectorAll(".image-comparison .slider-line")[1];
+// const sliderIcon_1 = document.querySelectorAll(".image-comparison .slider-icon")[1];
 
-  beforeImage_1.style.width = sliderValue_1;
-  sliderLine_1.style.left = sliderValue_1;
-  sliderIcon_1.style.left = sliderValue_1;
-});
+// slider_1.addEventListener("input", (e) => {
+//   let sliderValue_1 = e.target.value + "%";
 
-const slider_2 = document.querySelectorAll(".image-comparison .slider")[2];
-const beforeImage_2 = document.querySelectorAll(".image-comparison .before-image")[2];
-const sliderLine_2 = document.querySelectorAll(".image-comparison .slider-line")[2];
-const sliderIcon_2 = document.querySelectorAll(".image-comparison .slider-icon")[2];
+//   beforeImage_1.style.width = sliderValue_1;
+//   sliderLine_1.style.left = sliderValue_1;
+//   sliderIcon_1.style.left = sliderValue_1;
+// });
 
-slider_2.addEventListener("input", (e) => {
-  let sliderValue_2 = e.target.value + "%";
+// const slider_2 = document.querySelectorAll(".image-comparison .slider")[2];
+// const beforeImage_2 = document.querySelectorAll(".image-comparison .before-image")[2];
+// const sliderLine_2 = document.querySelectorAll(".image-comparison .slider-line")[2];
+// const sliderIcon_2 = document.querySelectorAll(".image-comparison .slider-icon")[2];
 
-  beforeImage_2.style.width = sliderValue_2;
-  sliderLine_2.style.left = sliderValue_2;
-  sliderIcon_2.style.left = sliderValue_2;
-});
+// slider_2.addEventListener("input", (e) => {
+//   let sliderValue_2 = e.target.value + "%";
+
+//   beforeImage_2.style.width = sliderValue_2;
+//   sliderLine_2.style.left = sliderValue_2;
+//   sliderIcon_2.style.left = sliderValue_2;
+// });
 
 
 // window.onscroll = function() { changeBackground() };
