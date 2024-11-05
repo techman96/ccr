@@ -16,19 +16,19 @@ videos.forEach(el => {
 })
 
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-var unstickPoint = sticky + (window.innerHeight * 1); // Adjust the multiplier to set the number of pages
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
+// var unstickPoint = sticky + (window.innerHeight * 1); // Adjust the multiplier to set the number of pages
 
-function myFunction() {
-  if (window.pageYOffset > sticky && window.pageYOffset < unstickPoint) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset > sticky && window.pageYOffset < unstickPoint) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
 
 // window.onscroll = function() {yourFunction()};
 
@@ -82,10 +82,6 @@ slider_2.addEventListener("input", (e) => {
   sliderLine_2.style.left = sliderValue_2;
   sliderIcon_2.style.left = sliderValue_2;
 });
-
-// function background(){
-
-// }
 
 
 // window.onscroll = function() { changeBackground() };
